@@ -49,6 +49,7 @@ main {
 }
 
 .p-index {
+  font-size: 20px;
   grid-area: p;
   align-self: flex-start;
   color: white;
