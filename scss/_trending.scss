@@ -1,0 +1,117 @@
+// MAIN TRENDING
+
+.main-trending-container {
+    height: auto;
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: 
+    "presentacion presentacion presentacion presentacion"
+    "csgo gtav pubg apex"
+    "fm warzone r6 terraria";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+}
+
+.texto-trending{
+    color: $colors-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: presentacion;
+}
+
+.card-csgo{
+    grid-area: csgo;
+}
+
+.card-gtav{
+    grid-area: gtav;
+}
+
+.card-pubg{
+    grid-area: pubg;
+}
+
+.card-apex{
+    grid-area: apex;
+}
+
+.card-fm{
+    grid-area: fm;
+}
+
+.card-warzone{
+    grid-area: warzone;
+}
+
+.card-R6{
+    grid-area: r6;
+}
+
+.card-terraria{
+    grid-area: terraria;
+}
+
+@media (max-width: 768px) {
+    .main-trending-container {
+        height: auto;
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas: 
+        "presentacion"
+        "csgo"
+        "gtav"
+        "pubg"
+        "apex"
+        "fm"
+        "warzone"
+        "r6"
+        "terraria";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        justify-items: center;
+        gap: 50px;
+    }
+    
+    .texto-trending{
+        color: $colors-main;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-area: presentacion;
+    }
+    
+    .card-csgo{
+        grid-area: csgo;
+    }
+    
+    .card-gtav{
+        grid-area: gtav;
+    }
+    
+    .card-pubg{
+        grid-area: pubg;
+    }
+    
+    .card-apex{
+        grid-area: apex;
+    }
+    
+    .card-fm{
+        grid-area: fm;
+    }
+    
+    .card-warzone{
+        grid-area: warzone;
+    }
+    
+    .card-R6{
+        grid-area: r6;
+    }
+    
+    .card-terraria{
+        grid-area: terraria;
+    }
+
+}

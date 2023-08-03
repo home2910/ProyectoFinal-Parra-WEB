@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
-body {
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  height: 100vh;
-}
-
 header {
   height: auto;
 }
@@ -27,156 +20,6 @@ header nav ul li {
   height: 100%;
 }
 
-main {
-  height: auto;
-}
-
-.grid-container-index {
-  height: 550px;
-  text-align: center;
-  align-items: center;
-  padding: 10px;
-  display: grid;
-  grid-template-areas: "h1 imagen" "p imagen" "p imagen";
-  grid-template-columns: 2fr 1.5fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px;
-}
-
-.h1-index {
-  grid-area: h1;
-  color: white;
-}
-
-.p-index {
-  font-size: 20px;
-  grid-area: p;
-  align-self: flex-start;
-  color: white;
-}
-
-.index-img {
-  grid-area: imagen;
-  border: 2px solid black;
-}
-
-@media (max-width: 768px) {
-  .grid-container-index {
-    height: auto;
-    text-align: center;
-    align-items: center;
-    padding: 10px;
-    display: grid;
-    grid-template-areas: "h1 h1" "p p" "imagen imagen";
-    gap: 5px;
-  }
-  .h1-index {
-    grid-area: h1;
-    color: white;
-  }
-  .p-index {
-    grid-area: p;
-    align-self: flex-start;
-    color: white;
-  }
-  .index-img {
-    grid-area: imagen;
-    border: 2px solid black;
-  }
-}
-.main-trending-container {
-  height: auto;
-  border: 2px solid black;
-  display: grid;
-  grid-template-areas: "presentacion presentacion presentacion presentacion" "csgo gtav pubg apex" "fm warzone r6 terraria";
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  text-align: center;
-}
-
-.texto-trending {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  grid-area: presentacion;
-}
-
-.card-csgo {
-  grid-area: csgo;
-}
-
-.card-gtav {
-  grid-area: gtav;
-}
-
-.card-pubg {
-  grid-area: pubg;
-}
-
-.card-apex {
-  grid-area: apex;
-}
-
-.card-fm {
-  grid-area: fm;
-}
-
-.card-warzone {
-  grid-area: warzone;
-}
-
-.card-R6 {
-  grid-area: r6;
-}
-
-.card-terraria {
-  grid-area: terraria;
-}
-
-@media (max-width: 768px) {
-  .main-trending-container {
-    height: auto;
-    border: 2px solid black;
-    display: grid;
-    grid-template-areas: "presentacion" "csgo" "gtav" "pubg" "apex" "fm" "warzone" "r6" "terraria";
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    justify-items: center;
-    gap: 50px;
-  }
-  .texto-trending {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    grid-area: presentacion;
-  }
-  .card-csgo {
-    grid-area: csgo;
-  }
-  .card-gtav {
-    grid-area: gtav;
-  }
-  .card-pubg {
-    grid-area: pubg;
-  }
-  .card-apex {
-    grid-area: apex;
-  }
-  .card-fm {
-    grid-area: fm;
-  }
-  .card-warzone {
-    grid-area: warzone;
-  }
-  .card-R6 {
-    grid-area: r6;
-  }
-  .card-terraria {
-    grid-area: terraria;
-  }
-}
 .main-container-generos {
   height: auto;
   display: grid;
@@ -303,6 +146,163 @@ main {
   .iframe-generos iframe {
     width: 370px;
     height: 205px;
+  }
+}
+.main-trending-container {
+  height: auto;
+  border: 2px solid black;
+  display: grid;
+  grid-template-areas: "presentacion presentacion presentacion presentacion" "csgo gtav pubg apex" "fm warzone r6 terraria";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  text-align: center;
+}
+
+.texto-trending {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  grid-area: presentacion;
+}
+
+.card-csgo {
+  grid-area: csgo;
+}
+
+.card-gtav {
+  grid-area: gtav;
+}
+
+.card-pubg {
+  grid-area: pubg;
+}
+
+.card-apex {
+  grid-area: apex;
+}
+
+.card-fm {
+  grid-area: fm;
+}
+
+.card-warzone {
+  grid-area: warzone;
+}
+
+.card-R6 {
+  grid-area: r6;
+}
+
+.card-terraria {
+  grid-area: terraria;
+}
+
+@media (max-width: 768px) {
+  .main-trending-container {
+    height: auto;
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "presentacion" "csgo" "gtav" "pubg" "apex" "fm" "warzone" "r6" "terraria";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    gap: 50px;
+  }
+  .texto-trending {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: presentacion;
+  }
+  .card-csgo {
+    grid-area: csgo;
+  }
+  .card-gtav {
+    grid-area: gtav;
+  }
+  .card-pubg {
+    grid-area: pubg;
+  }
+  .card-apex {
+    grid-area: apex;
+  }
+  .card-fm {
+    grid-area: fm;
+  }
+  .card-warzone {
+    grid-area: warzone;
+  }
+  .card-R6 {
+    grid-area: r6;
+  }
+  .card-terraria {
+    grid-area: terraria;
+  }
+}
+body {
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  height: 100vh;
+}
+
+main {
+  height: auto;
+}
+
+.grid-container-index {
+  height: 550px;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  display: grid;
+  grid-template-areas: "h1 imagen" "p imagen" "p imagen";
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.h1-index {
+  grid-area: h1;
+  color: white;
+}
+
+.p-index {
+  font-size: 20px;
+  grid-area: p;
+  align-self: flex-start;
+  color: white;
+}
+
+.index-img {
+  grid-area: imagen;
+  border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+  .grid-container-index {
+    height: auto;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "h1 h1" "p p" "imagen imagen";
+    gap: 5px;
+  }
+  .h1-index {
+    grid-area: h1;
+    color: white;
+  }
+  .p-index {
+    grid-area: p;
+    align-self: flex-start;
+    color: white;
+  }
+  .index-img {
+    grid-area: imagen;
+    border: 2px solid black;
   }
 }
 .main-sobreNosotros-container {
