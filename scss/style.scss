@@ -71,7 +71,7 @@ main {
 
 .index-img {
     grid-area: imagen;
-    border: 2px solid black;
+    border: $bordes;
 }
 
 // MEDIA INDEX
@@ -103,10 +103,9 @@ main {
 
     .index-img {
         grid-area: imagen;
-        border: 2px solid black;
+        border: $bordes;
     }
 }
-
 
 // FOOTER
 
