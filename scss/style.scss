@@ -73,7 +73,7 @@ main {
 
 @media (max-width: 768px) {
     .grid-container-index {
-        height: 550px;
+        height: auto;
         text-align: center;
         align-items: center;
         padding: 10px;
@@ -117,15 +117,17 @@ main {
 // MAIN GENEROS
 
 .main-container-generos {
-    height: 100vh;
+    height: auto;
     display: grid;
     align-items: center;
     grid-template-areas:
-        "explain explain explain"
-        "rpg hs disparos"
-        "br sim deporte";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+        "explain explain"
+        "rpg hs"
+        "disparos br"
+        "sim deporte";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
 }
 
 .explicacion-generos {
@@ -177,6 +179,91 @@ main {
     text-align: center;
 }
 
+.iframe-generos {
+    width: 100%;
+    height: 100%;
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container-generos {
+        height: auto;
+        display: grid;
+        align-items: center;
+        grid-template-areas:
+            "explain"
+            "rpg"
+            "hs"
+            "disparos"
+            "br"
+            "sim"
+            "deporte";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .explicacion-generos {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: explain;
+        text-align: center;
+    }
+
+    .generos-h4-1 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: rpg;
+        text-align: center;
+    }
+
+    .generos-h4-2 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: hs;
+        text-align: center;
+    }
+
+    .generos-h4-3 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: disparos;
+        text-align: center;
+    }
+
+    .generos-h4-4 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: br;
+        text-align: center;
+    }
+
+    .generos-h4-5 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: sim;
+        text-align: center;
+    }
+
+    .generos-h4-6 {
+        color: $colors-main;
+        justify-self: center;
+        grid-area: deporte;
+        text-align: center;
+    }
+
+    .iframe-generos {
+        width: 100%;
+        height: 100%;
+        iframe {
+            width: 370px;
+            height: 205px;
+        }
+    }
+}
+
 // SOBRE NOSOTROS
 
 .main-sobreNosotros-container {
@@ -217,7 +304,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     margin-top: 90px;
-    h2 {
+    h1 {
         color: $colors-main;
         margin-bottom: 15px;
         font-size: 35px;
@@ -351,7 +438,7 @@ main {
             "form";
         grid-gap: 50px;
         margin-top: 90px;
-        h2 {
+        h1 {
             color: $colors-main;
             margin-bottom: 15px;
             font-size: 35px;
@@ -485,12 +572,18 @@ main {
 .footer {
     height: 10vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     color: $colors-main;
+    gap: 10px;
+    font-size: 18px;
     a {
         text-decoration: none;
         color: $colors-main;
         font-size: 18px;
     }
+}
+
+.p-footer {
+    padding-top: 15px;
 }
